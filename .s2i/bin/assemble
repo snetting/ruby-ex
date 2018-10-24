@@ -68,6 +68,6 @@ fix-permissions ./
 set +e
 [[ -d ./tmp ]] && chgrp -R 0 ./tmp && chmod -R g+rw ./tmp
 [[ -d ./db ]] && chgrp -R 0 ./db && chmod -R g+rw ./db
-touch ./tmp/TEST
+echo "TEST" > ./tmp/TEST
 set -e
 
